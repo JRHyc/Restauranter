@@ -1,0 +1,12 @@
+
+@foreach(var review in ViewBag.reviews)
+{
+    <p><h1>@review.Restaurant_Name</h1> <h4>@review.Rating stars</h4>
+    @review.Content<br><br>
+    -@review.Name<br>
+    @review.Date.ToString("MMMM d, yyyy")
+    </p>
+    <hr>
+}
+
+<a href="/">Leave another Review</a>
